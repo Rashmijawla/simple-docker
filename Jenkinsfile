@@ -8,7 +8,7 @@ agent any
 stages {
 stage('Cloning our Git') {
 steps {
-git 'https://github.com/Rashmijawla/simple-docker.git'
+git ([url: 'https://github.com/Rashmijawla/simple-docker.git', branch: ‘main’])
 }
 }
 stage('Building our image') {
