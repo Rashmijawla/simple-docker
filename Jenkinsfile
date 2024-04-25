@@ -15,8 +15,6 @@ pipeline {
         stage('Building image') {
             steps {
                 script {
-                    sh "pwd"
-                    sh "export PATH=/usr/local/bin/docker:$PATH"
                     dockerImage = docker.build imagename
                 }
             }
